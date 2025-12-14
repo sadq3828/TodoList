@@ -30,13 +30,10 @@
                         <button type="submit" class="btn btn-primary btn-sm">Add</button>
                     </div>
                 </form>
-
             </div>
         </div>
-
         <!-- Todo Cards -->
         <div class="d-flex flex-wrap gap-3 justify-content-start">
-
             <!-- نمونه کار Pending -->
             <div class="card todo-card flex-fill">
                 <div class="card-body d-flex flex-column position-relative">
@@ -54,7 +51,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- نمونه کار Done -->
             <div class="card todo-card flex-fill">
                 <div class="card-body d-flex flex-column position-relative">
@@ -72,9 +68,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 </div>
 
@@ -85,7 +79,6 @@
             /* کارت‌ها حداکثر به اندازه فرم Add */
             margin-bottom: 1rem;
         }
-
         .todo-input {
             min-height: 80px;
             /* بزرگ‌تر کردن textarea فرم Add */
@@ -99,10 +92,8 @@
             button.addEventListener('click', () => {
                 const container = button.parentElement; // div دکمه‌ها
                 const cardBody = container.parentElement; // card-body
-
                 // دکمه Done رو حذف کن
                 button.remove();
-
                 // اضافه کردن تیک کنار عنوان
                 const title = cardBody.querySelector('h6'); // عنوان کار
                 if (title) {
